@@ -1,15 +1,98 @@
 body {
-    background-color: lightpink;
+    background-color: lightsteelblue;
+}
+
+img {
+    padding: 25px;
 }
 
 .container {
     margin: 40px auto;
-    width: 100%;
+    width: 1024px;
     background-color: white;
 }
 
-.form-control {
-    border-color: transparent transparent lightpink transparent;
-    background: transparent;
-    outline: 0;
+.page-header {
+    padding: 10px;
 }
+
+.portfolio-img-1 {
+    padding: 25px;
+    float: left;
+}
+
+.portfolio-img-2 {
+    padding: 25px;
+    float: right;
+}
+
+.form-control {
+    border-color: transparent transparent lightsteelblue transparent;
+    background: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-color: #333;
+    }
+  
+    #contact,
+    #main-content,
+    #sidebar {
+      width: 100%;
+    }
+  
+    #sidebar {
+      margin-top: 40px;
+    }
+
+    .portfolio-img-1,
+    .portfolio-img-2 {
+        float: none;
+        margin: 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    body {
+      background-color: #333;
+    }
+  
+    #contact,
+    #main-content,
+    #sidebar {
+      width: 100%;
+    }
+  
+    #sidebar {
+      margin-top: 40px;
+    }
+
+    .portfolio-img-1,
+    .portfolio-img-2 {
+        float: none;
+        margin: 0 auto;
+    }
+  }
+
+  @media only screen and (max-width: 168px) {
+    body {
+      background-color: #333;
+    }
+  
+    #contact,
+    #main-content,
+    #sidebar {
+      width: 100%;
+    }
+  
+    #sidebar {
+      margin-top: 40px;
+    }
+
+    .portfolio-img-1,
+    .portfolio-img-2 {
+        float: none;
+        margin: 0 auto;
+    }
+  }
