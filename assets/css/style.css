@@ -1,5 +1,16 @@
+.header {
+    background-image: url('../images/pexels-ylanite-koppens-1445416.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 nav {
-    background-color: #f1f8e9;
+    background-color: transparent;
+}
+
+nav a {
+    color: black;
 }
 
 nav ul a {
