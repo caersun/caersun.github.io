@@ -18,33 +18,41 @@
   </head>
 
   <body>
-
-    <div class="header">
-      <!-- Nav bar -->
+    <!-- Nav bar -->
+    <div class="navbar-fixed">
       <nav>
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo"><img src="assets/images/logo.png" height="50"></a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="portfolio.html">Projects</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="portfolio.html">Projects</a></li>
           </ul>
         </div>
       </nav>
     </div>
-    
 
-    <!-- Sidenav, which initializes when resized-->
+    <!-- Sidenav, which initializes when on small screens -->
     <ul class="sidenav" id="mobile-demo">
       <li><a href="index.html">Home</a></li>
       <li><a href="portfolio.html">Projects</a></li>
     </ul>
 
-    <!-- Container for Home content -->
-    <div class="container">
-
-    </div>
-    
+    <div class="main">
+      <div class="overlay valign-wrapper">
+        <div class="container">
+            <h1>hey, i'm cynthia</h1>
+            <h5 class="flow-text">// full-stack web developer (in training)</h5> 
+            <h5 class="flow-text">// biologist, educator, writer</h5>
+            <h5 class="flow-text">// austin, tx</h5>
+            <br>
+            <a class="waves-effect waves-light btn">let's talk</a>
+        </div>
+      </div>
+    </div>  
+     
     <!-- jQuery CDN from Google -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript for Materialize -->
