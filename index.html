@@ -18,147 +18,202 @@
   </head>
 
   <body>
-    <!-- Nav bar -->
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo"><img src="assets/images/logo.png" height="50"></a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="portfolio.html">Projects</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <header>
+      <!-- Nav bar -->
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#main-container" class="brand-logo"><img src="assets/images/logo.png" height="50"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li class="active"><a href="#main-container">Home</a></li>
+              <li><a href="#about-container">About</a></li>
+              <li><a href="#portfolio-container">Projects</a></li>
+              <li><a href="#contact-container">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>  
 
     <!-- Sidenav, which initializes when on small screens -->
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Projects</a></li>
+      <li><a href="#main-container">Home</a></li>
+      <li><a href="#about-container">About</a></li>
+      <li><a href="#portfolio-container">Projects</a></li>
+      <li><a href="#contact-container">Contact</a></li>
     </ul>
 
-    <div class="main">
-      <div class="overlay valign-wrapper">
-        <div class="container">
-            <h1>hey, i'm cynthia</h1>
-            <h5 class="flow-text">// full-stack web developer (in training)</h5> 
-            <h5 class="flow-text">// biologist, educator, writer</h5>
-            <h5 class="flow-text">// austin, tx</h5>
-            <br>
-            <a class="waves-effect waves-light btn">let's talk</a>
+    <main>
+      <div class="main" id="main-container">
+        <div class="overlay valign-wrapper">
+          <div class="container">
+              <h1>hey! i'm cynthia</h1>
+              <h5 class="flow-text">// full-stack web developer (in training)</h5> 
+              <h5 class="flow-text">// biologist, educator, writer</h5>
+              <h5 class="flow-text">// austin, tx</h5>
+              <br>
+              <a class="waves-effect waves-light btn" href="#contact-container">let's talk</a>
+          </div>
         </div>
       </div>
-    </div>  
+      
+      <!-- Container for About -->
+      <div class="container" id="about-container">
+        <div class="section">
+            <h3 class="center-align">about</h3>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <div class="row valign-wrapper">
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                        <h5 class="center-align">cynthia garcia</h5>
+                        <div class="divider"></div>
+                        <br>
+                        <p>I am a full-stack web designer and developer based out of beautiful (and weird) Austin, Texas. I live for the feeling of <em>YES QUEEN I AM A GENIUS!</em> when a programme actually works.</p>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <img src="assets/images/about-profile.JPG" class="circle responsive-img">
+                </div>
+                <div class="col s12 m4">
+                    <div class="card-panel">
+                        <h5 class="center-align">credentials</h5>
+                        <div class="divider"></div>
+                        <br>
+                        <p>qualification</p>
+                        <p>qualification</p>
+                        <a href="#"><i class="material-icons">picture_as_pdf</i>Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+      <!-- Container for Portfolio -->
+      <div class="container" id="portfolio-container">
+        <div class="section">
+          <h3 class="center-align">projects</h3>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+          <div class="col s12">
+            <!-- Shows primary or showcase project -->
+            <div class="card sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="#">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Survive 2020<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Survive 2020<i class="material-icons right">close</i></span>
+                <p>Here is some information about this product that is only revealed once clicked on.</p>
+              </div>
+              <div class="card-action">
+                <a href="#"><i class="material-icons left">link</i></a>
+                <a href="#"><i class="material-icons right">code</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <!-- Project, shows fullscreen on mobile and half-screen on larger screens -->
+            <div class="card sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="#">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Some Homework 1<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Some Homework 1<i class="material-icons right">close</i></span>
+                <p>Here is some information about this product that is only revealed once clicked on.</p>
+              </div>
+              <div class="card-action">
+                <a href="#"><i class="material-icons left">link</i></a>
+                <a href="#"><i class="material-icons right">code</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <!-- Project, shows fullscreen on mobile and half-screen on larger screens -->
+            <div class="card sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="#">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Some Homework 2<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Some Homework 2<i class="material-icons right">close</i></span>
+                <p>Here is some information about this product that is only revealed once clicked on.</p>
+              </div>
+              <div class="card-action">
+                <a href="#"><i class="material-icons left">link</i></a>
+                <a href="#"><i class="material-icons right">code</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container for Contact -->
+      <div class="container" id="contact-container">
+        <div class="section">
+          <h3 class="center-align">contact</h3>
+        </div>
+      <div class="divider"></div>
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon-prefix" type="text" class="validate">
+                <label for="icon-prefix">name</label>
+              </div>
+              <div class="input-field col s6">
+                <i class="material-icons prefix">email</i>
+                <input id="icon_email" type="text" class="validate">
+                <label for="icon_email">email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="icon-prefix2" class="materialize-textarea" rows="4"></textarea>
+                <label for="icon-prefex2">message</label>
+              </div>
+            </div>
+            <div class="row">
+              <button class="btn waves-effect waves-light right" type="submit" name="action">submit<i class="material-icons right">send</i></button>
+            </div>
+          </form>
+        </div>
+      </div> 
+    </main>
+
+    <footer class="page-footer">
+      <div class="container center-align">
+        <div class="row">
+          <a href="#!">GitHub</a>
+          <a href="#!">LinkedIn</a>
+          <a href="#!">Instagram</a>
+          <a href="#!">Facebook</a>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center-align">
+          © 2020 Cynthia Garcia
+        </div>
+      </div>
+    </footer>
      
     <!-- jQuery CDN from Google -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript for Materialize -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Import script.js 
-    <script type="text/javascript" src="assets/js/script.js"></script> -->
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-        // Initializes sidenav, which turns links into hamburger icon, when nav bar is resized
-        $('.sidenav').sidenav();
-        
-      })
-    </script>
+    <!-- Import script.js -->
+    <script type="text/javascript" src="assets/js/script.js"></script> 
   </body>
 </html>
-
-<!--
-
-<!DOCTYPE html>
-<html en=us>
-    <head>
-        <meta charset="UTF-8">
-        <title>C. Garcia's Portfolio</title>
-
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-   
-    </head>
-
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Cynthia Garcia</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="./index.html">About <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-
-          <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                      <div class="page-header text-center">
-                          <h1>About Me</h1>
-                      </div>
-                  </div>
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-8" id="main-content">
-                        <p>
-                            I am currently in the process of becoming a full-stack developer. I have experience and background as a curriculum, technical, creative, and copy-writer, a sciences and peer educator, and researcher in the life sciences specializing in bioinformatics.
-                        </p>
-                        <p>
-                            My research has been published in the Journal for the American Association of Microbiology, and creative work has been published in the <i>North Texas Review</i>. 
-                        </p>
-                    </div>
-
-                    <div class="col-md-4" id="sidebar">
-                        <div class="card text-center" style="width: 18rem;">
-                            <img src="./assets/images/self-profile1.jpg" class="card-img-top" alt="image of Cynthia Garcia">
-                            <div class="card-body">
-                              <a href="mailto: i.cynthiagarcia@gmail.com" class="card-link">Email</a>
-                              <a href="https://www.facebook.com/profile.php?id=100008054895311" class="card-link">Facebook</a>
-                              <a href="https://github.com/caersun" class="card-link">GitHub</a>
-                              <a href="https://www.instagram.com/venialcyn/" class="card-link">Instagram</a>
-                              <a href="https://www.linkedin.com/in/i-cynthiagarcia/" class="card-link">LinkedIn</a>
-                              
-                              <br><br>
-                              <a href="./contact.html" class="btn btn-primary">Contact Me</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>       
-            </div>
-
-
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"
-        ></script>
-    </body>
-</html> -->
