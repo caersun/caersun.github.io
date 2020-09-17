@@ -1,3 +1,7 @@
+html, body {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: #f8f2ea;
 }
@@ -32,4 +36,21 @@ nav ul a {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.card-panel ul li a {
+    color: #7c9289;
+}
+
+.page-footer {
+    color: black;
+    background-color: #A0BAAF;
+}
+
+.page-footer div.container.center-align div.row a {
+    color: white;
+}
+
+.page-footer .footer-copyright {
+    color: black;
 }
