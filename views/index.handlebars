@@ -1,0 +1,183 @@
+<header>
+    <!-- Nav bar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#main-container" class="brand-logo"><img src="assets/images/logo.png" height="50"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li class="active"><a href="#main-container">Home</a></li>
+                    <li><a href="#about-container">About</a></li>
+                    <li><a href="#portfolio-container">Projects</a></li>
+                    <li><a href="#contact-container">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- Sidenav, which initializes when on small screens -->
+<ul class="sidenav" id="mobile-demo">
+    <li><a href="#main-container">Home</a></li>
+    <li><a href="#about-container">About</a></li>
+    <li><a href="#portfolio-container">Projects</a></li>
+    <li><a href="#contact-container">Contact</a></li>
+</ul>
+
+<main>
+    <div class="main" id="main-container">
+        <div class="overlay valign-wrapper">
+            <div class="container">
+                <h1>cynthia garcia</h1>
+                <h5 class="flow-text">// full-stack web developer (in training)</h5>
+                <h5 class="flow-text">// biologist, educator, writer</h5>
+                <h5 class="flow-text">// austin, tx</h5>
+                <br>
+                <a class="waves-effect waves-light btn" href="#contact-container">let's talk</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container for About -->
+    <div class="container" id="about-container">
+        <div class="section">
+            <h3 class="center-align">about</h3>
+        </div>
+        <div class="divider"></div>
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m4"></div>
+                <div class="col s12 m4">
+                    <img src="assets/images/about-profile.JPG" class="circle responsive-img">
+                </div>
+                <div class="col s12 m4"></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card-panel">
+                        <h5 class="center-align">cynthia garcia</h5>
+                        <div class="divider"></div>
+                        <br>
+                        <p>I am a full-stack web designer and developer based out of beautiful (and weird) Austin,
+                            Texas. I live for the feeling of <em>YES QUEEN I AM A GENIUS!</em> when a programme actually
+                            works.</p>
+                    </div>
+                </div>
+                
+                <div class="col s12 m6">
+                    <div class="card-panel">
+                        <h5 class="center-align">credentials</h5>
+                        <div class="divider"></div>
+                        <br>
+                        <ul>
+                            <li><i class="fab fa-github"></i><a target="_blank" href="https://github.com/caersun">
+                                    GitHub</a></li>
+                            <li><i class="fab fa-linkedin-in"></i><a target="_blank"
+                                    href="https://www.linkedin.com/in/i-cynthiagarcia/"> LinkedIn</a></li>
+                            <li><i class="far fa-file-pdf"></i><a target="_blank" href="assets/files/garcia-resume.pdf">
+                                    Download Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container for Portfolio -->
+    <div class="container" id="portfolio-container">
+        <div class="section">
+            <h3 class="center-align">projects</h3>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            {{#each project}}
+            <div class="col s12 m6">
+                <div class="card sticky-action">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="{{this.previewImage}}">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">{{this.title}}<i
+                                class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">{{this.title}}<i
+                                class="material-icons right">close</i></span>
+                        <br>
+                        <p>{{this.description}}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="{{this.site}}"><i class="material-icons left">link</i></a>
+                        <a href="{{this.repo}}"><i class="material-icons right">code</i></a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div> 
+
+    <!-- Container for Contact -->
+    <div class="container" id="contact-container">
+        <div class="section">
+            <h3 class="center-align">contact</h3>
+        </div>
+        <div class="divider"></div>
+        <div class="row valign-row valign-wrapper">
+            <div class="col s12 m4">
+                <div class="card-panel center-align">
+                    <p><i class="material-icons">email</i></p>
+                    <br>
+                    <p>i.cynthiagarcia@gmail.com</p>
+                    <br><br>
+                    <p><i class="material-icons">phone_iphone</i></p>
+                    <br>
+                    <p>1 (917) 686-8652</p>
+                </div>
+            </div>
+            <form class="col s12 m8 newContact">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input type="text" class="validate" id="fullname" />
+                        <label for="fullname">name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">email</i>
+                        <input  type="text" class="validate" id="email" />
+                        <label for="email">email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea class="materialize-textarea" rows="4" id="message"></textarea>
+                        <label for="message">message</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn waves-effect waves-light right" type="submit">submit<i
+                            class="material-icons right">send</i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="page-footer">
+    <div class="container center-align">
+        <div class="row">
+            <a href="https://github.com/caersun/"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/i-cynthiagarcia/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/venialcyn/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container center-align">
+            © 2020 Cynthia Garcia
+        </div>
+    </div>
+</footer>
+
