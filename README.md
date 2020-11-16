@@ -17,8 +17,6 @@ Access Cynthia's portfolio [HERE](https://cgarciaport.herokuapp.com/)
 
 ## What It Looks Like
 ![A scroll through Cynthia Garcia's portfolio, displaying about-information, projects, and contact info.](./public/assets/images/portfolioscroll.gif)
-![Portfolio functionality, showing functionality of Project display containers](./public/assets/images/portfolioproject.gif)
-![Portfolio functionality, showing functionality of Contact input](./public/assets/images/portfoliocontact.gif)
 
 ## License
 MIT
