@@ -3,6 +3,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Header from "./components/Header/Header";
+import Container from "./components/Container";
 import Main from "./pages/Main";
 import About from "./pages/About";
 // import Contact from "./pages/Contact";
@@ -14,6 +15,7 @@ function App() {
   return (
     <Router>
       <Header />
+      <Container>
       <Switch>
         <Route exact path={["/", "/main"]}>
           <Main />
@@ -22,6 +24,7 @@ function App() {
           <About />
         </Route>
       </Switch>
+      </Container>
     </Router>
   );
 }
