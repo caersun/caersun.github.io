@@ -13,7 +13,7 @@ const About = props => {
             </Row>
             <Row>
                 <Col size="s12 m4">
-                    <img className="circle responsive-img" src="../../assets/images/about-profile.JPG" alt="Photograph of Cynthia Garcia"></img>
+                    <img className="circle responsive-img" src="./assets/images/about-profile.JPG" alt="Photograph of Cynthia Garcia"></img>
                 </Col>
                 <Col size="s12 m8">
                     <div className="card-panel">
