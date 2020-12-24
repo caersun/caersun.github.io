@@ -2,8 +2,10 @@ import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
 // import "fullpage.js/vendors/scrolloverflow";
 // scrollOverflow=true
+// <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+// <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 import Main from "./Main";
-import About from "./About";
+import About from "./About/About";
 
 class Fullpage extends React.Component {
     // onLeave(origin, destination, direction) {
@@ -17,15 +19,26 @@ class Fullpage extends React.Component {
     // onLeave={this.onLeave.bind(this)}
     // afterLoad={this.afterLoad.bind(this)}
 
+    
+
     render () {
         return (
             <ReactFullpage 
                 licenseKey={null}
-                sectionsColor={["orange", "purple", "white"]}
                 render={({ state, fullpageApi }) => {
+                    const mainStyles = {
+                        background: `url('./assets/images/pexels-ylanite-koppens-1445416.jpg') center center fixed`,
+                        height: `100vh`,
+                        position: `relative`,
+                        backgroundSize: `cover`,
+                        // -webkit-background-size: cover;
+                        // -moz-background-size: cover;
+                        // -o-background-size: cover;
+                        // -msn-background-size: cover;
+                    }
                     return (
                         <div id="fullpage-wrapper">
-                            <div className="section section1">
+                            <div className="section section1" style={mainStyles}>
                                 <Main />
                             </div>
                             <div className="section">

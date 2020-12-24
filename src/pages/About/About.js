@@ -1,7 +1,7 @@
-import Section from "../components/Section";
-import Divider from "../components/Divider";
-import Col from "../components/Col";
-import Row from "../components/Row";
+import Section from "../../components/Section";
+import Divider from "../../components/Divider";
+import Col from "../../components/Col";
+import Row from "../../components/Row";
 
 const About = props => {
     return (
