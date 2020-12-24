@@ -1,19 +1,19 @@
 // import logo from './logo.svg';
 // import './App.css';
 import React from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import Header from "./components/Header/Header";
-import Container from "./components/Container";
-import Main from "./pages/Main";
-import About from "./pages/About";
+// import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+// import Header from "./components/Header/Header";
+// import Container from "./components/Container";
+
 // import Contact from "./pages/Contact";
 // import Projects from "./pages/Projects";
+// import ReactFullPage from "@fullpage/react-fullpage";
+import Fullpage from "./pages/Fullpage";
 
 import 'materialize-css/dist/css/materialize.min.css';
 
-function App() {
-  return (
-    <Router>
+// if using router
+/* <Router>
       <Header />
       <Container>
       <Switch>
@@ -25,8 +25,12 @@ function App() {
         </Route>
       </Switch>
       </Container>
-    </Router>
-  );
+    </Router> */
+
+function App() {
+  return (
+    <Fullpage />
+  ); 
 }
 
 export default App;
