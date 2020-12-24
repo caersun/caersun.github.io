@@ -1,26 +1,27 @@
 import React from "react";
 import ReactFullpage from "@fullpage/react-fullpage";
-import "fullpage.js/vendors/scrolloverflow";
+// import "fullpage.js/vendors/scrolloverflow";
+// scrollOverflow=true
 import Main from "./Main";
 import About from "./About";
 
 class Fullpage extends React.Component {
-    onLeave(origin, destination, direction) {
-        console.log("Leaving section " + origin.index);
-    };
+    // onLeave(origin, destination, direction) {
+    //     console.log("Leaving section " + origin.index);
+    // };
 
-    afterLoad(origin, destination, direction) {
-        console.log("After load: " + destination.index);
-    };
+    // afterLoad(origin, destination, direction) {
+    //     console.log("After load: " + destination.index);
+    // };
+
+    // onLeave={this.onLeave.bind(this)}
+    // afterLoad={this.afterLoad.bind(this)}
 
     render () {
         return (
             <ReactFullpage 
                 licenseKey={null}
-                scrollOverflow={true}
                 sectionsColor={["orange", "purple", "white"]}
-                onLeave={this.onLeave.bind(this)}
-                afterLoad={this.afterLoad.bind(this)}
                 render={({ state, fullpageApi }) => {
                     return (
                         <div id="fullpage-wrapper">

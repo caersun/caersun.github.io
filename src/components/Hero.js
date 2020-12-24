@@ -4,11 +4,11 @@
 
 const Hero = props => {
     return (
-        <div className="valign-wrapper">
+        <div>
             <h1>cynthia garcia</h1>
-            <h5 className="flow-text">// full stack web developer</h5>
-            <h5 className="flow-text">// combine art, tech, and science</h5>
-            <h5 className="flow-text">// austin, tx</h5>
+            <h5 className="flow-text">full stack web developer</h5>
+            <h5 className="flow-text">combine art, tech, and science</h5>
+            <h5 className="flow-text">austin, tx</h5>
         </div>
     );
 };
