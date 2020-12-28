@@ -1,3 +1,4 @@
+// TODO: Have to initialize
 const ProjectCard = props => {
     return (
         <div className="card sticky-action">

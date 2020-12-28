@@ -1,42 +1,50 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import ProjectCard from "../../components/ProjectCard";
+import Row from "../../components/Row";
+import Col from "../../components/Col";
+import projects from "../../utils/projects.json";
 
 function Projects() {
-    // setting the initial state
-    const [project, setProject] = useState({});
-    const [projects, setProjects] = useState([]);
-
-    // load all projects
-    useEffect(() => {
-        loadProjects()
-    }, []);
-
-    function loadProjects() {
-        // do a call to the "api" to get projects
-        console.log("is this technically from an api?");
-        fetch("projects.json", {headers: { "Content-Type": "application/json", "Accept": "application/json" }})
-            .then((response) => {
-                console.log("response", response);
-                return response.json();
-            })
-            .then(projects => {
-                console.log("projects", projects);
-                setProjects(projects);
-                setProject(projects[0])
-            })
-            .catch(err => console.log(err));
-    };
-
     return (
-        <div className="slide">
-            <ProjectCard 
-                img={project.previewImage}
-                title={project.title}
-                description={project.description}
-                repo={project.repo}
-                site={project.site}
-            />
-        </div>
+        <Row>
+            {}
+            <Col size="s12 m4">
+                <ProjectCard 
+                    img={projects[0].previewImage}
+                    title={projects[0].title}
+                    description={projects[0].description}
+                    repo={projects[0].repo}
+                    site={projects[0].site}
+                />
+            </Col>
+            <Col size="s12 m4">
+                <ProjectCard 
+                    img={projects[1].previewImage}
+                    title={projects[1].title}
+                    description={projects[1].description}
+                    repo={projects[1].repo}
+                    site={projects[1].site}
+                />
+            </Col>
+            <Col size="s12 m4">
+                <ProjectCard 
+                    img={projects[2].previewImage}
+                    title={projects[2].title}
+                    description={projects[2].description}
+                    repo={projects[2].repo}
+                    site={projects[2].site}
+                />
+            </Col>
+            <Col size="s12 m4">
+                <ProjectCard 
+                    img={projects[3].previewImage}
+                    title={projects[3].title}
+                    description={projects[3].description}
+                    repo={projects[3].repo}
+                    site={projects[3].site}
+                />
+            </Col>
+        </Row>
     );
 }
 

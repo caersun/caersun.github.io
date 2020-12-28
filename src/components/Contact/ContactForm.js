@@ -1,5 +1,5 @@
 import Row from "../Row";
-import Col from "../Col";
+// import Col from "../Col";
 
 const ContactForm = props => {
     return (
