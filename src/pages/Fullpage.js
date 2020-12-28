@@ -5,7 +5,9 @@ import ReactFullpage from "@fullpage/react-fullpage";
 // <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
 // <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
 import Main from "./Main";
-import About from "./About/About";
+import About from "./About";
+import Projects from "./Projects"
+import Contact from "./Contact";
 
 class Fullpage extends React.Component {
     // onLeave(origin, destination, direction) {
@@ -45,7 +47,10 @@ class Fullpage extends React.Component {
                                 <About />
                             </div>
                             <div className="section">
-                                <h3>t e s t i n g</h3>
+                                <Projects />
+                            </div>
+                            <div className="section">
+                                <Contact />
                                 <button onClick={() => fullpageApi.moveTo(1, 0)}>
                                     Move to top
                                 </button>

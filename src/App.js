@@ -2,7 +2,7 @@
 // import './App.css';
 import React from "react";
 // import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-// import Header from "./components/Header/Header";
+import Header from "./components/Header/Header";
 // import Container from "./components/Container";
 
 // import Contact from "./pages/Contact";
@@ -27,9 +27,13 @@ import 'materialize-css/dist/css/materialize.min.css';
       </Container>
     </Router> */
 
+// TODO: Does the Header have to be menu for fullpage.js?
 function App() {
   return (
-    <Fullpage />
+    <div>
+      <Header />
+      <Fullpage />
+    </div>
   ); 
 }
 
