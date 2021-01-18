@@ -14,7 +14,8 @@ function Main() {
     return (
         <Section style={mainStyle} id="main">
             <Container>
-                <h1 className="right-align light-green-text text-lighten-4">hey! i'm cynthia</h1>
+                {/* text-lighten-4 */}
+                <h1 className="right-align light-green-text text-darken-3">hey! i'm cynthia</h1> 
                 <h5 className="right-align flow-text light-green-text text-lighten-2">// full stack web developer</h5>
                 <h5 className="right-align flow-text light-green-text text-lighten-2">// combining art, tech, and science</h5>
                 <h5 className="right-align flow-text light-green-text text-lighten-2">// austin, tx</h5>
