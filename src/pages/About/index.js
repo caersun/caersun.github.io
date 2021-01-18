@@ -12,7 +12,10 @@ const About = (props) => {
             <div className="center-align">
               <a className="modal-trigger" href="#work-modal">
                 <i className="large material-icons light-green-text text-darken-4">work</i>
+                <br />
+                <div className="light-green-text text-darken-4">resume</div>
               </a>
+              
             </div>
           </Col>
           <Col size="s12 m4">
@@ -24,6 +27,8 @@ const About = (props) => {
             <div className="center-align">
               <a target="blank" href="https://github.com/caersun">
                 <i className="large material-icons light-green-text text-darken-4">code</i>
+                <br />
+                <div className="light-green-text text-darken-4">repos</div>
               </a>
             </div>
           </Col>
