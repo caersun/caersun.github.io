@@ -1,54 +1,43 @@
 import Section from "../../components/Section";
-import Divider from "../../components/Divider";
-import Container from "../../components/Container";
+// import ContainerV from "../../components/ContainerV";
 import Col from "../../components/Col";
-import Row from "../../components/Row";
+// import Row from "../../components/Row";
+import Modal from "../../components/Modal";
 
 const About = (props) => {
   return (
-    <Section header="about" id="about">
-      <Container>      
-        <Row>
+    <Section header="about" id="about">      
+        <div className="row valign-wrapper">
           <Col size="s12 m4">
-            <img
-              className="circle responsive-img"
-              src="./assets/images/about-profile.JPG"
-              alt="Photograph of Cynthia Garcia"
-            ></img>
-          </Col>
-          <Col size="s12 m8">
-            <div className="card-panel">
-              <p>I am a full-stack web designer and developer based out of beautiful Austin, Texas.</p>
-              <Divider />
-              <br />
-              <Row>
-                <Col>
-                  <i class="fab fa-github"></i>
-                  <a target="blank" href="https://github.com/caersun"> GitHub</a>
-                </Col>
-                <Col>
-                  <i class="fab fa-linkedin-in"></i>
-                  <a target="blank" href="https:/linkedin.com/in/i-cynthiagarcia"> LinkedIn</a>
-                </Col>
-                <Col>
-                  <i class="far fa-file-pdf"></i>
-                  <a target="blank" href="./assets/files/garcia-resume.pdf"> View Resume</a>
-                </Col>
-              </Row>
-              {/* <p>
-              <ul>
-                            <li><i class="fab fa-github"></i><a target="blank" href="https://github.com/caersun">
-                                    GitHub</a></li>
-                            <li><i class="fab fa-linkedin-in"></i><a target="blank"
-                                    href="https://www.linkedin.com/in/i-cynthiagarcia/"> LinkedIn</a></li>
-                            <li><i class="far fa-file-pdf"></i><a target="_blank" href="./assets/files/garcia-resume.pdf">
-                                    Download Resume</a></li>
-                        </ul>
-              </p> */}
+            <div className="center-align">
+              <a className="modal-trigger" href="#work-modal">
+                <i className="large material-icons light-green-text text-darken-4">work</i>
+                <br />
+                <div className="light-green-text text-darken-4">resume</div>
+              </a>
+              
             </div>
           </Col>
-        </Row>
-      </Container>
+          <Col size="s12 m4">
+            <div className="card-panel center-align">
+              <p>I am Cynthia Garcia, a full-stack web designer and developer based out of beautiful Austin, Texas.</p>
+            </div>
+          </Col>
+          <Col size="s12 m4">
+            <div className="center-align">
+              <a target="blank" href="https://github.com/caersun">
+                <i className="large material-icons light-green-text text-darken-4">code</i>
+                <br />
+                <div className="light-green-text text-darken-4">repos</div>
+              </a>
+            </div>
+          </Col>
+        </div>
+      <Modal modalID="work-modal">
+        <div>
+            Download <a target="blank" href="./assets/files/garcia-resume.pdf">Resume</a>
+        </div>
+      </Modal>
     </Section>
     );
 };

@@ -9,11 +9,7 @@ Access Cynthia's portfolio [HERE](https://cgarciaport.herokuapp.com/)
 - CSS
 - Materialize.css
 - JavaScript
-- jQuery
-- Express
-- Handlebars
-- Sequelize
-- Heroku
+- React
 
 ## What It Looks Like
 ![A scroll through Cynthia Garcia's portfolio, displaying about-information, projects, and contact info.](./public/assets/images/portfolioscroll.gif)
