@@ -1,5 +1,6 @@
 import { Component } from "react";
 import M from "materialize-css";
+import logo from "../../assets/favicon.ico";
 
 class Navbar extends Component {
     componentDidMount() {
@@ -12,7 +13,7 @@ class Navbar extends Component {
                 <nav className="light-green lighten-4">
                     <div className="nav-wrapper">
                         <a href="/" class="brand-logo">
-                            <img src="./favicon.ico" alt="C. Garcia's Logo"/>
+                            <img src={logo} alt="C. Garcia's Logo"/>
                         </a>
                         <a href="/" data-target="mobile-sidenav" className="sidenav-trigger">
                             <i className="material-icons">menu</i>

@@ -1,18 +1,16 @@
 import React from "react";
 import Container from "../../components/Container";
 import Section from "../../components/Section";
-// import "./style.css";
+import me from "./../../assets/images/about-profile.JPG";
 
 function Main() {
-    const mainStyle = {
-        background: `url("./assets/images/about-profile.jpg") center center fixed`,
-        height: `100vh`,
-        position: `relative`,
-        backgroundSize: `cover`
-    }
-
     return (
-        <Section style={mainStyle} id="main">
+        <Section id="main" style={{
+            background: `url(${me}) center center fixed`,
+            height: `100vh`,
+            position: `relative`,
+            backgroundSize: `cover`
+        }}>
             <Container>
                 {/* text-lighten-4 */}
                 <h1 className="right-align light-green-text text-darken-3">hey! i'm cynthia</h1> 
