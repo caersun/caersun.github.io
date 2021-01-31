@@ -1,39 +1,50 @@
 import Section from "../../components/Section";
-import Carousel from "../../components/Carousel";
+import Row from "../../components/Row";
+import Col from "../../components/Col";
+import Container from "../../components/Container";
 import Modal from "../../components/Modal";
 import ProjectModal from "../../components/ProjectModal";
-import ProjectCard from "../../components/ProjectCard";
 import projects from "../../utils/projects.json";
+import me from "./../../assets/images/about-profile.JPG";
+import ProjectImg from "../../components/ProjectImg";
 
 function Projects() {
     return (
         <Section header="projects" id="projects">
-                <Carousel>
-                    <a className="carousel-item modal-trigger" href="#project1">
-                        <ProjectCard 
+            <Container>
+            <Row>
+                <Col size="s12">
+                    <h5 className="center">Here are a few of my recent projects. See more at my <a tatget="blank" href="https://github.com/caersun" className="light-green-text text-darken-4">GitHub</a>.</h5>
+                </Col>
+            </Row>
+            <Row>
+                <Col size="s12 m4">
+                    <a className="modal-trigger" href="#project1">
+                    <ProjectImg 
                             img={projects[0].previewImage}
                             title={projects[0].title}
                         />
                     </a>
-                    <a className="carousel-item modal-trigger" href="#project2">
-                        <ProjectCard 
+                </Col>
+                <Col size="s12 m4">
+                    <a className="modal-trigger" href="#project2">
+                    <ProjectImg 
                             img={projects[1].previewImage}
                             title={projects[1].title}
                         />
                     </a>
-                    <a className="carousel-item modal-trigger" href="#project3">
-                        <ProjectCard 
+                </Col>
+                <Col size="s12 m4">
+                    <a className="modal-trigger" href="#project3">
+                    <ProjectImg 
                             img={projects[2].previewImage}
                             title={projects[2].title}
                         />
                     </a>
-                    <a className="carousel-item modal-trigger" href="#project4">
-                        <ProjectCard 
-                            img={projects[3].previewImage}
-                            title={projects[3].title}
-                        />
-                    </a>
-                </Carousel>
+                </Col>
+            </Row>
+            </Container>
+
             <Modal modalID="project1">
                 <ProjectModal 
                     img={projects[0].previewImage}
@@ -61,7 +72,7 @@ function Projects() {
                     code={projects[2].code}
                 />
             </Modal>
-            <Modal modalID="project4">
+            {/* <Modal modalID="project4"> 
                 <ProjectModal 
                     img={projects[3].previewImage}
                     title={projects[3].title}
@@ -69,7 +80,7 @@ function Projects() {
                     site={projects[3].site}
                     code={projects[3].code}
                 />
-            </Modal>
+            </Modal> */}
         </Section>
     );
 }
