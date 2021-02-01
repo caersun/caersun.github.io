@@ -3,12 +3,21 @@ import Col from "../../components/Col";
 import Container from "../../components/Container"
 import ContactInfo from "../../components/Contact/ContactInfo";
 import ContactForm from "../../components/Contact/ContactForm";
-import Section from "../../components/Section";
+// import Section from "../../components/Section";
 
 const Contact = props => {
     return (
-        <Section header="contact" id="contact">
+        <div className="section valign-wrapper" id="contact" style={{
+            minHeight: `100vh`,
+            height: `100%`,
+            width: `100%`
+        }}>
             <Container>
+                <Row>
+                    <Col size="s12">
+                        <h2 className="center-align">contact</h2>
+                    </Col>
+                </Row>
                 <Row>
                     <Col size="s12 m4">
                         <ContactInfo />
@@ -18,7 +27,7 @@ const Contact = props => {
                     </Col>
                 </Row>
             </Container>
-        </Section>
+        </div>
     );
 };
 
