@@ -17,6 +17,9 @@ const Contact = props => {
                     <Col size="s12">
                         <h2 className="center-align">contact</h2>
                     </Col>
+                    <Col size="s12">
+                        <h5 className="center-align">Let's work together to bring your ideas to life.</h5>
+                    </Col>
                 </Row>
                 <Row>
                     <Col size="s12 m4">

@@ -57,7 +57,7 @@ const ContactForm = props => {
             </Row>
             <Row>
                 <button class="btn-large waves-effect waves-light right light-green darken-4" type="submit" name="action" style={{ borderRadius: `30px` }}>
-                    {status}
+                    Send Message
                 </button>
             </Row>
         </form>

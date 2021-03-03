@@ -22,7 +22,7 @@ function Projects() {
                         <h2 className="center-align">projects</h2>
                     </Col>
                     <Col size="s12">
-                        <h5 className="center">Here are a few of my recent projects. See more at my <a tatget="blank" href="https://github.com/caersun" className="light-green-text text-darken-4">GitHub</a>.</h5>
+                        <h5 className="center-align">Here are a few of my recent projects. See more at my <a target="blank" href="https://github.com/caersun" className="light-green-text text-darken-4">GitHub</a>.</h5>
                     </Col>
                 </Row>
                 <Row>
