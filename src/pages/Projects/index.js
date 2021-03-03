@@ -5,7 +5,7 @@ import Container from "../../components/Container";
 import Modal from "../../components/Modal";
 import ProjectModal from "../../components/ProjectModal";
 import projects from "../../utils/projects.json";
-import me from "./../../assets/images/about-profile.JPG";
+// import me from "./../../assets/images/about-profile.JPG";
 import ProjectImg from "../../components/ProjectImg";
 
 function Projects() {
