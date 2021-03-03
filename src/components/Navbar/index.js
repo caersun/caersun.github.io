@@ -18,7 +18,7 @@ class Navbar extends Component {
                         <ul className="right hide-on-small-only">
                             <li><a 
                                 href="#contact" 
-                                className="btn waves-effect waves-light deep-orange lighten-2" 
+                                className="btn-flat waves-effect waves-light deep-orange lighten-2 white-text" 
                                 style={{ borderRadius: `20px`, textTransform: `none` }}>
                                     Let's Talk
                             </a></li>
