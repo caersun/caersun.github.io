@@ -1,12 +1,11 @@
-// import Section from "../../components/Section";
 import Row from "../../components/Row";
 import Col from "../../components/Col";
 import Container from "../../components/Container";
 import Modal from "../../components/Modal";
 import ProjectModal from "../../components/ProjectModal";
+import Project from "../../components/Project";
+
 import projects from "../../utils/projects.json";
-// import me from "./../../assets/images/about-profile.JPG";
-import ProjectImg from "../../components/ProjectImg";
 
 function Projects() {
     return (
@@ -26,60 +25,21 @@ function Projects() {
                     </Col>
                 </Row>
                 <Row>
-                    <Col size="s12 m4">
-                        <a className="modal-trigger" href="#project1">
-                        <ProjectImg 
-                                img={projects[0].previewImage}
-                                title={projects[0].title}
-                            />
-                        </a>
-                    </Col>
-                    <Col size="s12 m4">
-                        <a className="modal-trigger" href="#project2">
-                        <ProjectImg 
-                                img={projects[1].previewImage}
-                                title={projects[1].title}
-                            />
-                        </a>
-                    </Col>
-                    <Col size="s12 m4">
-                        <a className="modal-trigger" href="#project3">
-                        <ProjectImg 
-                                img={projects[2].previewImage}
-                                title={projects[2].title}
-                            />
-                        </a>
-                    </Col>
+                    {projects.map(project => (
+                        <Col size="s12 m6 l4" key={project.id}>
+                            <a className="modal-trigger" href={project.modalTrigger}>
+                                <Project project={project} />
+                            </a>
+                        </Col>
+                    ))}
                 </Row>
             </Container>
 
-            <Modal modalID="project1">
-                <ProjectModal 
-                    img={projects[0].previewImage}
-                    title={projects[0].title}
-                    description={projects[0].description}
-                    site={projects[0].site}
-                    code={projects[0].code}
-                />
-            </Modal>
-            <Modal modalID="project2">
-                <ProjectModal 
-                    img={projects[1].previewImage}
-                    title={projects[1].title}
-                    description={projects[1].description}
-                    site={projects[1].site}
-                    code={projects[1].code}
-                />
-            </Modal>
-            <Modal modalID="project3">
-                <ProjectModal 
-                    img={projects[2].previewImage}
-                    title={projects[2].title}
-                    description={projects[2].description}
-                    site={projects[2].site}
-                    code={projects[2].code}
-                />
-            </Modal>
+            {projects.map(project => (
+                <Modal modalID={project.modalID} key={project.id} >
+                    <ProjectModal project={project} />
+                </Modal>
+            ))}
         </div>
     );
 }

@@ -16,10 +16,8 @@ class Modal extends Component {
 
     render() {
         return (
-            <div id={this.props.modalID} className="modal">
-                <div className="modal-content">
-                    {this.props.children}
-                </div>
+            <div className="modal modal-fixed-footer" id={this.props.modalID}>
+                {this.props.children}
             </div>
         );
     };
