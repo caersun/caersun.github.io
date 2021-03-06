@@ -5,53 +5,134 @@
         "title": "It's a Blogs Life",
         "description": "Share your thoughts, find new friends, and give feedback to other's content in the form of comments and likes!",
         "details": {
-            "highlights": ["highlight 1", "highlight 2", "highlight 3"],
-            "tools": ["tool 1", "tool 2", "tool 3"]
+            "highlights": [
+                "Full-stack social media and blogging website",
+                "Node and Express server handling UI/UX",
+                "Dynamic front end built on Handlebars engine with Materialize framework",
+                "Passport authentication and MySQL many-to-many model interactions allowing for complex user interactions"
+            ],
+            "tools": [
+                "Node", 
+                "Express", 
+                "Handlebars",
+                "Materialize",
+                "Passport",
+                "MySQL",
+                "Sequelize"
+            ]
         },
         "previewImage": "./assets/images/blogslife.png",
-        "siteImage": "./assets/images/blogslife.png",
+        "siteImage": "./assets/images/blogslife-site.png",
         "site": "https://its-a-blogs-life.herokuapp.com",
         "repo": "https://github.com/Cenzo-cmd/A-Blogs-Life"
     },
     {
         "modalTrigger": "#project2",
         "modalID": "project2",
-        "title": "Survive 2020",
-        "description": "Share your thoughts, find new friends, and give feedback to other's content in the form of comments and likes!",
+        "title": "hometohome",
+        "description": "E-commerce site to connect entreprenurial homecooks and their hungry neighbors.",
         "details": {
-            "highlights": ["highlight 1", "highlight 2", "highlight 3"],
-            "tools": ["tool 1", "tool 2", "tool 3"]
+            "highlights": [
+                "MERN application to sell and buy homecooked meals",
+                "Back end Node and Express server, MySQL models, and user authentication",
+                "Front end React, Redux, and Reactstrap",
+                "Purchases powered by Stripe"
+            ],
+            "tools": [
+                "Passport",
+                "MySQL",
+                "Sequelize",
+                "Cloudinary",
+                "React",
+                "Reactstrap",
+                "Redux",
+                "Stripe",
+                "Axios",
+                "Restful API"
+            ]
         },
-        "previewImage": "./assets/images/blogslife.png",
-        "siteImage": "./assets/images/blogslife.png",
+        "previewImage": "./assets/images/hometohome.png",
+        "siteImage": "./assets/images/hometohome-site.png",
+        "repo": "https://hometohome.herokuapp.com",
+        "site": "https://github.com/caersun/hometohome"
+    },
+    {
+        "modalTrigger": "#project3",
+        "modalID": "project3",
+        "title": "Survive 2020",
+        "description": "Can you survive 2020 without becoming infected? Test your luck and choices with this choose-your-own-adventure game!",
+        "details": {
+            "highlights": [
+                "A front end, choose-your-own-adventure webgame", 
+                "Use of multiple server-side APIs, such as Giphy, Evil Insults, and Covid-19", 
+                "User choice and chance determine game outcome",
+                "Constructed using Bulma.io framework"
+            ],
+            "tools": [
+                "HTML5", 
+                "CSS", 
+                "Bulma.io",
+                "FontAwesome",
+                "JavaScript",
+                "jQuery",
+                "Giphy API",
+                "Evil Insults API",
+                "Covid-19 API"
+            ]
+        },
+        "previewImage": "./assets/images/survive2020.png",
+        "siteImage": "./assets/images/survive2020-site.png",
         "site": "https://mattmoe1.github.io/Survive-2020",
         "repo": "https://github.com/Mattmoe1/Survive-2020"
     },
     {
-        "modalTrigger": "#project1",
-        "modalID": "project1",
+        "modalTrigger": "#project4",
+        "modalID": "project4",
         "title": "Weather Dashboard",
-        "description": "Share your thoughts, find new friends, and give feedback to other's content in the form of comments and likes!",
+        "description": "Search cities around the world for current weather and a five-day forecast. Powered by OpenWeatherMap API.",
         "details": {
-            "highlights": ["highlight 1", "highlight 2", "highlight 3"],
-            "tools": ["tool 1", "tool 2", "tool 3"]
+            "highlights": [
+                "Front-end weather search website", 
+                "Designed with Bulma.io framework",
+                "Utilizes OpenWeatherMap API data to dynamically generate up-to-date weather forecasts", 
+                "Dynamically display and store searches"],
+            "tools": [
+                "HTML5", 
+                "CSS", 
+                "Bulma.io",
+                "JavaScript",
+                "jQuery",
+                "Moment.js",
+                "OpenWeatherMap API"
+            ]
         },
         "previewImage": "./assets/images/weatherdash.png",
-        "siteImage": "./assets/images/blogslife.png",
+        "siteImage": "./assets/images/weatherdash-site.gif",
         "site": "https://caersun.github.io/weatherdash",
         "repo": "https://github.com/caersun/weatherdash"
     },
     {
-        "modalTrigger": "#project1",
-        "modalID": "project1",
+        "modalTrigger": "#project5",
+        "modalID": "project5",
         "title": "Scheduler",
-        "description": "Share your thoughts, find new friends, and give feedback to other's content in the form of comments and likes!",
+        "description": "Stay organize and locally store your hourly schedule for the day here.",
         "details": {
-            "highlights": ["highlight 1", "highlight 2", "highlight 3"],
-            "tools": ["tool 1", "tool 2", "tool 3"]
+            "highlights": [
+                "Front end scheduling and task-maintenance website", 
+                "User input can be saved and overwritten in local storage", 
+                "Dynamically tracks workday by hour, identifying past, present, and future hours"
+            ],
+            "tools": [
+                "HTML5", 
+                "CSS", 
+                "Bootstrap",
+                "JavaScript",
+                "jQuery",
+                "Moment.js"
+            ]
         },
-        "previewImage": "./assets/images/hometohome.png",
-        "siteImage": "./assets/images/blogslife.png",
+        "previewImage": "./assets/images/scheduler.png",
+        "siteImage": "./assets/images/scheduler-site.gif",
         "site": "https://caersun.github.io/scheduler",
         "repo": "https://github.com/caersun/scheduler"
     }
