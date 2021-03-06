@@ -26,7 +26,7 @@ function Projects() {
                 </Row>
                 <Row>
                     {projects.map(project => (
-                        <Col size="s12 m6 l4" key={project.id}>
+                        <Col size="s12 m6 l4" key={project.modalID}>
                             <a className="modal-trigger" href={project.modalTrigger}>
                                 <Project project={project} />
                             </a>
@@ -36,7 +36,7 @@ function Projects() {
             </Container>
 
             {projects.map(project => (
-                <Modal modalID={project.modalID} key={project.id} >
+                <Modal modalID={project.modalID} key={project.modalID} >
                     <ProjectModal project={project} />
                 </Modal>
             ))}

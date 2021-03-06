@@ -28,14 +28,14 @@ const ProjectModal = ({ project }) => {
                                 <h5>Highlights:</h5>
                                 {/* <ul style={{ listStyleType: `disc` }}> */}
                                     {project.details.highlights.map(highlight => (
-                                        <li>{highlight}</li>
+                                        <li key={highlight}>{highlight}</li>
                                     ))}
                                 {/* </ul> */}
                             </Col>
                             <Col size="s12 m6 center-align">
                                 <h5>Tools Used:</h5>
                                 {project.details.tools.map(tool => (
-                                    <li>{tool}</li>
+                                    <li key={tool}>{tool}</li>
                                 ))}
                             </Col>
                         </Row>                        

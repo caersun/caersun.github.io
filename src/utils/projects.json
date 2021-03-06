@@ -2,33 +2,6 @@
     {
         "modalTrigger": "#project1",
         "modalID": "project1",
-        "title": "It's a Blogs Life",
-        "description": "Share your thoughts, find new friends, and give feedback to other's content in the form of comments and likes!",
-        "details": {
-            "highlights": [
-                "Full-stack social media and blogging website",
-                "Node and Express server handling UI/UX",
-                "Dynamic front end built on Handlebars engine with Materialize framework",
-                "Passport authentication and MySQL many-to-many model interactions allowing for complex user interactions"
-            ],
-            "tools": [
-                "Node", 
-                "Express", 
-                "Handlebars",
-                "Materialize",
-                "Passport",
-                "MySQL",
-                "Sequelize"
-            ]
-        },
-        "previewImage": "./assets/images/blogslife.png",
-        "siteImage": "./assets/images/blogslife-site.png",
-        "site": "https://its-a-blogs-life.herokuapp.com",
-        "repo": "https://github.com/Cenzo-cmd/A-Blogs-Life"
-    },
-    {
-        "modalTrigger": "#project2",
-        "modalID": "project2",
         "title": "hometohome",
         "description": "E-commerce site to connect entreprenurial homecooks and their hungry neighbors.",
         "details": {
@@ -55,6 +28,33 @@
         "siteImage": "./assets/images/hometohome-site.png",
         "repo": "https://hometohome.herokuapp.com",
         "site": "https://github.com/caersun/hometohome"
+    },
+    {
+        "modalTrigger": "#project2",
+        "modalID": "project2",
+        "title": "It's a Blogs Life",
+        "description": "Share your thoughts, find new friends, and give feedback to other's content in the form of comments and likes!",
+        "details": {
+            "highlights": [
+                "Full-stack social media and blogging website",
+                "Node and Express server handling UI/UX",
+                "Dynamic front end built on Handlebars engine with Materialize framework",
+                "Passport authentication and MySQL many-to-many model interactions allowing for complex user interactions"
+            ],
+            "tools": [
+                "Node", 
+                "Express", 
+                "Handlebars",
+                "Materialize",
+                "Passport",
+                "MySQL",
+                "Sequelize"
+            ]
+        },
+        "previewImage": "./assets/images/blogslife.png",
+        "siteImage": "./assets/images/blogslife-site.png",
+        "site": "https://its-a-blogs-life.herokuapp.com",
+        "repo": "https://github.com/Cenzo-cmd/A-Blogs-Life"
     },
     {
         "modalTrigger": "#project3",

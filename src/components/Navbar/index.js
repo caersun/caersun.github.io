@@ -12,7 +12,7 @@ class Navbar extends Component {
             <header>
                 <nav className="transparent">
                     <div className="nav-wrapper">
-                        <a href="/" class="brand-logo">
+                        <a href="/" className="brand-logo">
                             <img src={logo} alt="C. Garcia's Logo"/>
                         </a>
                         <ul className="right hide-on-small-only">
