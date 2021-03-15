@@ -115,7 +115,7 @@
         "modalTrigger": "#project5",
         "modalID": "project5",
         "title": "Scheduler",
-        "description": "Stay organize and locally store your hourly schedule for the day here.",
+        "description": "Stay organized and locally store your hourly schedule for the day here.",
         "details": {
             "highlights": [
                 "Front end scheduling and task-maintenance website", 
