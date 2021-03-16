@@ -1,6 +1,6 @@
 import { Component } from "react";
 import M from "materialize-css";
-import logo from "../../assets/favicon.ico";
+import logo from "../../assets/images/logo64.png";
 
 class Navbar extends Component {
     componentDidMount() {
@@ -13,7 +13,7 @@ class Navbar extends Component {
                 <nav className="transparent">
                     <div className="nav-wrapper">
                         <a href="/" className="brand-logo">
-                            <img src={logo} alt="C. Garcia's Logo"/>
+                            <img src={logo} alt="C. Garcia's Logo" style={{ height: `auto` }} />
                         </a>
                         <ul className="right hide-on-small-only">
                             <li><a 
